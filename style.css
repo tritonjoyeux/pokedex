@@ -1,0 +1,442 @@
+body{
+    background-color: #222222;
+    color: #BBBBBB;
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+#nombre{  /*FORMULAIRE DE RENTRE*/
+    margin-top: 30px;
+    height: 20px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+}
+img{ /*Taille de l'image pour que celle ci rentre dans l'ecran*/
+    height:250px;
+    width:250px;
+    opacity: 0.35;
+}
+#nombre:focus{ /*Disable de selecteur*/
+    outline:0;
+}
+#boutton{   /*Style du bouton de validation*/
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #FFFFFF;
+}
+#boutton:hover{
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #DDDDDD;
+}
+#boutton:focus{
+    outline:0;
+}
+#form{
+    display: inline-block;
+    text-align: center;
+    width: 800px;
+}
+#pokedex{  /*PARTIE GAUCHE DU POKEDEX*/
+    vertical-align: top;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    width: 350px;
+    height: 500px;
+    background: darkred;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    border-bottom-left-radius: 20px;
+    box-shadow: 0 4px 5px -2px black;
+}
+#separa{  /*PARTIE CENTRALE DU POKEDEX*/
+     border-radius: 20px;
+     text-align: left;
+     position: relative;
+     display: inline-block;
+     width: 30px;
+     height: 500px;
+     background: darkred;
+     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+     border-bottom-left-radius: 20px;
+     box-shadow: 0 4px 5px -2px black;
+ }
+#pokedex2{  /*PARTIE DROITE DU POKEDEX*/
+     vertical-align: top;
+     text-align: left;
+     position: relative;
+     display: inline-block;
+     width: 350px;
+     height: 500px;
+     background: darkred;
+     -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+     border-bottom-right-radius: 30px;
+     box-shadow: 0 4px 5px -2px black;
+ }
+#ecran{  /*ECRAN D'AFFICHAGE DE LA PHOTO DU POKEMON*/
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    position: relative;
+    margin-top: 40px;
+    margin-left: 55px;
+    border-color: #222222;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: lightgreen;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 100%);
+}
+@font-face {
+    font-family: 'stats';
+    src: url('pixelmix.ttf');
+}
+#ecran3{  /*ECRAN DU TYPE*/
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 79px;
+    color: #222222;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: 'stats';
+    border-color: #222222;
+    display: inline-block;
+    width: 195px;
+    height: 25px;
+    background-color: lightgreen;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 0% 100%);
+}
+.blancrond{
+    display: inline-block;
+    text-align: center;
+    margin-top: 5px;
+    margin-left: 14px;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    -webkit-clip-path: circle(45% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#premierblanc,#sndblanc{
+    margin-left: 70px;
+}
+#rond1{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: darkblue;
+    height: 50px;
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#reflet1{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: blue;
+    -webkit-clip-path: ellipse(25% 16% at 50% 50%);
+    clip-path: ellipse(25% 16% at 50% 50%);
+}
+#rond2{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: darkgreen;
+    height: 50px;
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#reflet2{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: green;
+    -webkit-clip-path: ellipse(25% 16% at 50% 50%);
+    clip-path: ellipse(25% 16% at 50% 50%);
+}
+#rond3{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: darkgoldenrod;
+    height: 50px;
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#reflet3{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: goldenrod;
+    -webkit-clip-path: ellipse(25% 16% at 50% 50%);
+    clip-path: ellipse(25% 16% at 50% 50%);
+}
+#rond4{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #BBBBBB;
+    height: 50px;
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#reflet4{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: white;
+    -webkit-clip-path: ellipse(25% 16% at 50% 50%);
+    clip-path: ellipse(25% 16% at 50% 50%);
+}
+#rond5{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: #111111;
+    height: 50px;
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#reflet5{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: #222222;
+    -webkit-clip-path: ellipse(25% 16% at 50% 50%);
+    clip-path: ellipse(25% 16% at 50% 50%);
+}
+#rond6{
+    display: inline-block;
+    margin-top: 5px;
+    background-color: darkcyan;
+    height: 50px;
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#reflet6{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: cyan;
+    -webkit-clip-path: ellipse(25% 16% at 50% 50%);
+    clip-path: ellipse(25% 16% at 50% 50%);
+}
+#ecran2{ /*ECRAN DES STATS*/
+    font-family: 'stats';
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    vertical-align: top;
+    position: relative;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 20px #000000;
+    color: #222222;
+    margin-top: 35px;
+    margin-left: 45px;
+    border-color: #222222;
+    display: inline-block;
+    width: 250px;
+    height: 250px;
+    background-color: lightgreen;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.bouttondroite{
+    vertical-align: top;
+    height: 30px;
+    width: 70px;
+    margin-left: 30px;
+    margin-top: 17px;
+    background-color: #777777;
+    border-radius: 10px;
+}
+.bouttondroite:hover{
+    background-color: #666666;
+}
+.bouttondroite:focus{
+    outline:0;
+}
+#control{
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 105px;
+    padding-top: 0px;
+    height: 80px;
+    width: 220px;
+}
+#son{  /*SON DU POKEDEX*/
+    display: inline-block;
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 30px;
+    background-color: #555555;
+    height: 80px;
+    width: 80px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+hr{
+    margin-top: 5px;
+    margin-bottom: 1px;
+    width: 75px;
+    border-color: #222222;
+}
+#topleft{
+    display: inline-block;
+    margin-top: 50px;
+    position: relative;
+    text-align: left;
+    vertical-align: bottom;
+    width: 300px;
+    height: 70px;
+    background: darkred;
+    -webkit-clip-path: polygon(0% 0%, 72% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 72% 0, 100% 100%, 0% 100%);
+    border-top-left-radius: 20px;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+}
+#topright{
+    display: inline-block;
+    margin-top: 50px;
+    position: relative;
+    vertical-align: bottom;
+    width: 430px;
+    height: 70px;
+    background: #222222;
+}
+#loupiote1{  /*Lumiere du pokedex*/
+    position: relative;
+    display: inline-block;
+    margin-top: 8px;
+    margin-left: 50px;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#loupiote{
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+}
+#refletloupiote{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-color: lightcoral;
+    -webkit-clip-path: ellipse(25% 16% at 50% 50%);
+    clip-path: ellipse(25% 16% at 50% 50%);
+}
+#textpoke{
+    display: none;
+}
+#baspokedex{
+    display: none;
+}
+#sexe{ /*Nidoran m ou f*/
+    visibility: hidden;
+    margin-top: 20px;
+}
+
+/*-------------------RESPONSIV--------------------*/
+@media screen and (max-width:800px) {
+    #pokedex2{
+        display: none;
+    }
+    #separa{
+        display: none;
+    }
+    #topright{
+        display: none;
+    }
+    #topleft{
+        margin-right: 46px;
+    }
+    #loupiote{
+        background-color: maroon;
+    }
+    #refletloupiote{
+        background-color: brown;
+    }
+    #ecran,#ecran3{
+        display: none;
+    }
+    #rond1,#rond2,#rond3,#rond4,#rond5,#rond6{
+        display: none;
+    }
+    #pokedex{
+        text-align: center;
+    }
+    @font-face {
+        font-family: 'textpok';
+        src: url('pokemon.ttf');
+    }
+    #textpoke{
+        margin-top: 60px;
+        display: inline-block;
+        font-family: 'textpok';
+        color:gold;
+        font-size: 40px;
+    }
+    b,#boutton,#nombre{
+        visibility: hidden;
+    }
+    #baspokedex{
+        margin-top: 110px;
+        display: inline-block;
+        height: 20px;
+        width: 200px;
+        background-color: #640000;
+        border-radius: 10px;
+        -moz-box-shadow:    inset 0 0 10px #000000;
+        -webkit-box-shadow: inset 0 0 10px #000000;
+        box-shadow:         inset 0 0 10px #000000;
+    }
+    .blancrond{
+        display: none;
+    }
+    #form{
+        display: inline-block;
+        text-align: center;
+        width: 300px;
+        height: 50px;
+    }
+    form{
+        height: 10px;
+    }
+}
